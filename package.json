@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "camel-harness-demo-nwjs",
   "version": "0.7.0",
   "description": "camel-harness nw.js demo",
@@ -7,38 +6,25 @@
   "scripts": {
     "nw-install": "nw install 0.19.5",
     "start": "nw ."
-=======
-  "name": "camel-harness-demo-electron",
-  "version": "0.7.0",
-  "description": "camel-harness electron demo",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron main.js"
->>>>>>> 1a697058479189d027f7ce013742da71d4776b3b
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ddmitov/camel-harness.git"
+    "url": "git+https://github.com/ddmitov/camel-harness-demo-nwjs.git"
   },
   "keywords": [
     "perl",
     "asynchronous",
     "child_process",
-<<<<<<< HEAD
     "nw.js"
-=======
-    "electron"
->>>>>>> 1a697058479189d027f7ce013742da71d4776b3b
   ],
   "author": "Dimitar D. Mitov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ddmitov/camel-harness/issues"
+    "url": "https://github.com/ddmitov/camel-harness-demo-nwjs/issues"
   },
-  "homepage": "https://github.com/ddmitov/camel-harness#readme",
+  "homepage": "https://github.com/ddmitov/camel-harness-demo-nwjs#readme",
   "dependencies": {
     "camel-harness": "^0.7.0",
-<<<<<<< HEAD
     "nwjs": "^1.0.0"
   },
   "window": {
@@ -46,8 +32,5 @@
     "icon": "camel.png",
     "min_width": 800,
     "min_height": 600
-=======
-    "electron-prebuilt": "^0.37.0"
->>>>>>> 1a697058479189d027f7ce013742da71d4776b3b
   }
 }
