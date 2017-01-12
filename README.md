@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 camel-harness-demo-nwjs
 --------------------------------------------------------------------------------
 
@@ -9,39 +8,18 @@ camel-harness-demo-nwjs
 [![Known Vulnerabilities](https://snyk.io/test/github/ddmitov/camel-harness-demo-nwjs/badge.svg)](https://snyk.io/test/github/ddmitov/camel-harness-demo-nwjs)  
 
 camel-harness-demo-nwjs is a demo application for the [camel-harness](https://www.npmjs.com/package/camel-harness) NPM package based on [NW.js](http://nwjs.io/).
-=======
-camel-harness-demo-electron
---------------------------------------------------------------------------------
-
-[![GitHub Version](https://img.shields.io/github/release/ddmitov/camel-harness-demo-electron.svg)](https://github.com/ddmitov/camel-harness-demo-electron/releases)
-[![GitHub License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.md)
-[![NPM Version](https://img.shields.io/npm/v/camel-harness-demo-electron.svg)](https://www.npmjs.com/package/camel-harness-demo-electron)
-[![Coverity Scan Build Status](https://scan.coverity.com/projects/11336/badge.svg)](https://scan.coverity.com/projects/ddmitov-camel-harness-demo-electron)
-[![Known Vulnerabilities](https://snyk.io/test/github/ddmitov/camel-harness-demo-electron/badge.svg)](https://snyk.io/test/github/ddmitov/camel-harness-demo-electron)  
-
-camel-harness-demo-electron is an [Electron-based](http://electron.atom.io/) demo application for the [camel-harness](https://www.npmjs.com/package/camel-harness) NPM package.
->>>>>>> 1a697058479189d027f7ce013742da71d4776b3b
 
 ## Quick Start
 Create an empty directory and type:  
 ``npm init --yes``  
-<<<<<<< HEAD
 ``npm install camel-harness-demo-nwjs``  
 ``cd node_modules/camel-harness-demo-nwjs``  
 ``npm run nw-install``  
-=======
-``npm install camel-harness-demo-electron``  
-``cd node_modules/camel-harness``  
->>>>>>> 1a697058479189d027f7ce013742da71d4776b3b
 ``npm start``
 
 ## Node.js Dependencies
 * ``camel-harness``
-<<<<<<< HEAD
 * ``nwjs``
-=======
-* ``electron-prebuilt``
->>>>>>> 1a697058479189d027f7ce013742da71d4776b3b
 
 ## External Dependency
 Perl distribution with the ``AnyEvent`` Perl module installed and a ``perl`` binary available on PATH.
