@@ -1,7 +1,7 @@
 {
   "name": "camel-harness-demo-nwjs",
   "version": "0.7.1",
-  "description": "camel-harness nw.js demo",
+  "description": "NW.js demo application for the camel-harness package",
   "main": "index.html",
   "scripts": {
     "nw-install": "nw install 0.19.5",
