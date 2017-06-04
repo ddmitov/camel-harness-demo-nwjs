@@ -21,8 +21,9 @@ Type in an empty directory:
 * ``camel-harness``
 * ``nwjs``
 
-## External Dependency
-Perl distribution with the ``AnyEvent`` Perl module installed and a ``perl`` binary available on PATH.
+## Perl Dependencies
+* ``perl`` binary available on PATH
+* ``AnyEvent`` CPAN module installed
 
 ## [Thanks and Credits](./CREDITS.md)
 
