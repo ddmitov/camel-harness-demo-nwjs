@@ -3,7 +3,9 @@
 // camel-harness demo for NW.js
 
 // Load the camel-harness package:
-const camelHarness = require('camel-harness');
+const dirname = require('./dirname.js').dirname;
+var modulesDirectory = dirname.replace('elephant-harness-demo-nwjs', '');
+const elephantHarness = require(modulesDirectory + 'elephant-harness');
 
 var nwWindow = nw.Window.get();
 var nwCloseWindow = false;

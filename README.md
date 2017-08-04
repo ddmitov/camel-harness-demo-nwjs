@@ -5,14 +5,16 @@ camel-harness-demo-nwjs
 [![GitHub License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.md)
 [![NPM Version](https://img.shields.io/npm/v/camel-harness-demo-nwjs.svg)](https://www.npmjs.com/package/camel-harness-demo-nwjs)
 [![bitHound Status](https://www.bithound.io/github/ddmitov/camel-harness-demo-nwjs/badges/code.svg)](https://www.bithound.io/github/ddmitov/camel-harness-demo-nwjs)
-[![[Snyk Status](https://snyk.io/test/github/ddmitov/camel-harness-demo-nwjs/badge.svg)](https://snyk.io/test/github/ddmitov/camel-harness-demo-nwjs)  
+[![Snyk Status](https://snyk.io/test/github/ddmitov/camel-harness-demo-nwjs/badge.svg)](https://snyk.io/test/github/ddmitov/camel-harness-demo-nwjs)  
 
 Demo application for the [camel-harness](https://www.npmjs.com/package/camel-harness) npm package based on [NW.js](http://nwjs.io/)
 
 ## Quick Start
-``git clone git://github.com/ddmitov/camel-harness-demo-nwjs.git``  
-``cd camel-harness-demo-nwjs``  
-``npm install``  
+Type in an empty directory:  
+``npm init --yes``  
+``npm install elephant-harness-demo-nwjs``  
+``cd node_modules/elephant-harness-demo-nwjs``  
+``npm run nw-install``  
 ``npm start``
 
 ## Core Dependencies
