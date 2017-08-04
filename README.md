@@ -12,8 +12,8 @@ Demo application for the [camel-harness](https://www.npmjs.com/package/camel-har
 ## Quick Start
 Type in an empty directory:  
 ``npm init --yes``  
-``npm install elephant-harness-demo-nwjs``  
-``cd node_modules/elephant-harness-demo-nwjs``  
+``npm install camel-harness-demo-nwjs``  
+``cd node_modules/camel-harness-demo-nwjs``  
 ``npm run nw-install``  
 ``npm start``
 
