@@ -2,12 +2,8 @@
 
 // camel-harness demo for NW.js
 
-const dirname = require('./dirname.js').dirname;
-
-var modulesDirectory = dirname.replace('camel-harness-demo-nwjs', '');
-
 // Load the camel-harness package:
-const camelHarness = require(modulesDirectory + 'camel-harness');
+const camelHarness = require('camel-harness');
 
 var nwWindow = nw.Window.get();
 var nwCloseWindow = false;
@@ -27,10 +23,9 @@ if (platform !== 'win32') {
 var versionScriptFullPath =
     path.join(dirname, 'perl', 'version.pl');
 
-var versionScriptObject = new Object();
+var versionScriptObject = {};
 versionScriptObject.interpreter = 'perl';
 versionScriptObject.scriptFullPath = versionScriptFullPath;
-
 versionScriptObject.stdoutFunction = function(stdout) {
   document.getElementById('version-script').innerHTML = stdout;
 };
@@ -40,32 +35,30 @@ var counterScriptFullPath =
     path.join(dirname, 'perl', 'counter.pl');
 
 // counter.pl - first instance:
-var counterOneObject = new Object();
+var counterOneObject = {};
 counterOneObject.interpreter = 'perl';
 counterOneObject.scriptFullPath = counterScriptFullPath;
-
 counterOneObject.stdoutFunction = function(stdout) {
   document.getElementById('long-running-script-one').innerHTML = stdout;
 };
 
 // counter.pl - second instance:
-var counterTwoObject = new Object();
+var counterTwoObject = {};
 counterTwoObject.interpreter = 'perl';
 counterTwoObject.scriptFullPath = counterScriptFullPath;
-
 counterTwoObject.stdoutFunction = function(stdout) {
   document.getElementById('long-running-script-two').innerHTML = stdout;
 };
 
 // interactive script:
-var interactiveScriptObject = new Object();
+var interactiveScriptObject = {};
+
 function startInteractiveScript() {
   var interactiveScriptFullPath =
       path.join(dirname, 'perl', 'interactive.pl');
 
   interactiveScriptObject.interpreter = 'perl';
   interactiveScriptObject.scriptFullPath = interactiveScriptFullPath;
-
   interactiveScriptObject.stdoutFunction = function(stdout) {
     if (stdout.match(/_closed_/)) {
       nwCloseWindow = true;
