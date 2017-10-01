@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "nw-install": "nw install 0.19.5",
-    "start": "nw ."
+    "start": "nw .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,12 +27,14 @@
   "homepage": "https://github.com/ddmitov/camel-harness-demo-nwjs#readme",
   "dependencies": {
     "camel-harness": "^0.8.0",
-    "nwjs": "^1.0.0"
+    "nwjs": "^1.0.0",
+    "snyk": "^1.41.1"
   },
   "window": {
     "title": "camel-harness nw.js demo",
     "icon": "camel.png",
     "min_width": 800,
     "min_height": 600
-  }
+  },
+  "snyk": true
 }
