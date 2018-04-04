@@ -1,0 +1,13 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:ms:20170412':
+    - '*':
+        reason: Not exploitable using camel-harness
+        expires: 2017-12-31T00:00:00.000Z
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - nwjs > extract-zip > debug:
+        patched: '2017-09-30T23:50:03.841Z'
