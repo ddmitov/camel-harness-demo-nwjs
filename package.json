@@ -1,6 +1,6 @@
 {
   "name": "camel-harness-demo-nwjs",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "NW.js demo application for the camel-harness package",
   "main": "index.html",
   "scripts": {

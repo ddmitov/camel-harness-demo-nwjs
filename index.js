@@ -2,30 +2,31 @@
 
 // camel-harness demo for NW.js
 
+let nwWindow = nw.Window.get();
+let nwCloseWindow = false;
+
 // Load the camel-harness package:
-const dirname = require('./dirname.js').dirname;
-var modulesDirectory = dirname.replace('elephant-harness-demo-nwjs', '');
-const elephantHarness = require(modulesDirectory + 'elephant-harness');
+const CAMEL_HARNESS = require('../camel-harness');
 
-var nwWindow = nw.Window.get();
-var nwCloseWindow = false;
+// Determine the operating system and initialize the 'path' object:
+let os = require('os');
+let platform = os.platform();
 
-// Determine the operating system and initialize 'path' object:
-var os = require('os');
-var platform = os.platform();
-
-var path;
+let path;
 if (platform !== 'win32') {
   path = require('path').posix;
 } else {
   path = require('path').win32;
 }
 
-// version.pl:
-var versionScriptFullPath =
-    path.join(dirname, 'perl', 'version.pl');
+// Get the current directory:
+const DIRNAME = require('./dirname.js').dirname;
 
-var versionScriptObject = {};
+// version.pl:
+let versionScriptFullPath =
+    path.join(DIRNAME, 'perl', 'version.pl');
+
+let versionScriptObject = {};
 versionScriptObject.interpreter = 'perl';
 versionScriptObject.scriptFullPath = versionScriptFullPath;
 versionScriptObject.stdoutFunction = function(stdout) {
@@ -33,11 +34,11 @@ versionScriptObject.stdoutFunction = function(stdout) {
 };
 
 // counter.pl full path:
-var counterScriptFullPath =
-    path.join(dirname, 'perl', 'counter.pl');
+let counterScriptFullPath =
+    path.join(DIRNAME, 'perl', 'counter.pl');
 
 // counter.pl - first instance:
-var counterOneObject = {};
+let counterOneObject = {};
 counterOneObject.interpreter = 'perl';
 counterOneObject.scriptFullPath = counterScriptFullPath;
 counterOneObject.stdoutFunction = function(stdout) {
@@ -45,7 +46,7 @@ counterOneObject.stdoutFunction = function(stdout) {
 };
 
 // counter.pl - second instance:
-var counterTwoObject = {};
+let counterTwoObject = {};
 counterTwoObject.interpreter = 'perl';
 counterTwoObject.scriptFullPath = counterScriptFullPath;
 counterTwoObject.stdoutFunction = function(stdout) {
@@ -53,11 +54,11 @@ counterTwoObject.stdoutFunction = function(stdout) {
 };
 
 // interactive script:
-var interactiveScriptObject = {};
+let interactiveScriptObject = {};
 
 function startInteractiveScript() {
-  var interactiveScriptFullPath =
-      path.join(dirname, 'perl', 'interactive.pl');
+  let interactiveScriptFullPath =
+      path.join(DIRNAME, 'perl', 'interactive.pl');
 
   interactiveScriptObject.interpreter = 'perl';
   interactiveScriptObject.scriptFullPath = interactiveScriptFullPath;
@@ -70,12 +71,12 @@ function startInteractiveScript() {
     }
   };
 
-  camelHarness.startScript(interactiveScriptObject);
+  CAMEL_HARNESS.startScript(interactiveScriptObject);
 }
 
 function sendDataToInteractiveScript() {
-  var data = document.getElementById('interactive-script-input').value;
-  interactiveScriptObject.scriptHandler.stdin.write(data + '\n');
+  let data = document.getElementById('interactive-script-input').value;
+  interactiveScriptObject.scriptHandler.stdin.write(`${data}\n`);
 }
 
 function closeInteractiveScript() {
