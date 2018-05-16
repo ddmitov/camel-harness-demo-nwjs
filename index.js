@@ -28,7 +28,7 @@ let versionScriptFullPath =
 
 let versionScriptObject = {};
 versionScriptObject.interpreter = "perl";
-versionScriptObject.scriptFullPath = versionScriptFullPath;
+versionScriptObject.script = versionScriptFullPath;
 versionScriptObject.stdoutFunction = function(stdout) {
   document.getElementById("version-script").textContent = stdout;
 };
@@ -40,7 +40,7 @@ let counterScriptFullPath =
 // counter.pl - first instance:
 let counterOneObject = {};
 counterOneObject.interpreter = "perl";
-counterOneObject.scriptFullPath = counterScriptFullPath;
+counterOneObject.script = counterScriptFullPath;
 counterOneObject.stdoutFunction = function(stdout) {
   document.getElementById("long-running-script-one").textContent = stdout;
 };
@@ -48,7 +48,7 @@ counterOneObject.stdoutFunction = function(stdout) {
 // counter.pl - second instance:
 let counterTwoObject = {};
 counterTwoObject.interpreter = "perl";
-counterTwoObject.scriptFullPath = counterScriptFullPath;
+counterTwoObject.script = counterScriptFullPath;
 counterTwoObject.stdoutFunction = function(stdout) {
   document.getElementById("long-running-script-two").textContent = stdout;
 };
@@ -61,7 +61,7 @@ function startInteractiveScript() {
       path.join(dirName, "perl", "interactive.pl");
 
   interactiveScriptObject.interpreter = "perl";
-  interactiveScriptObject.scriptFullPath = interactiveScriptFullPath;
+  interactiveScriptObject.script = interactiveScriptFullPath;
   interactiveScriptObject.stdoutFunction = function(stdout) {
     if (stdout.match(/_closed_/)) {
       nwCloseWindow = true;
