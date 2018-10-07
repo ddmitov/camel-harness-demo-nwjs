@@ -10,12 +10,11 @@ camel-harness-demo-nwjs
 Demo application for the [camel-harness](https://www.npmjs.com/package/camel-harness) npm package based on [NW.js](http://nwjs.io/)
 
 ## Quick Start
-Type in an empty directory:  
-``npm init --yes``  
-``npm install camel-harness-demo-nwjs``  
-``cd node_modules/camel-harness-demo-nwjs``  
+``git clone git://github.com/ddmitov/camel-harness-demo-nwjs``  
+``cd camel-harness-demo-nwjs``  
+``npm install``  
 ``npm run nw-install``  
-``npm start``
+``npm start``  
 
 ## Core Dependencies
 * ``os``
