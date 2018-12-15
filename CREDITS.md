@@ -1,14 +1,16 @@
-Thanks and Credits
---------------------------------------------------------------------------------
+# Thanks and Credits
+
 Amata mea Argeia - gratiam magnam tibi ago!  
 Patientia tua in studiis meis computatoriis auxilium meum maximum!  
 
 ## Camel Icon
+
 Thanks to Jennifer Maher-Bontrager, author of the Camel icon.  
 http://www.iconarchive.com/show/animal-icons-by-jen/Camel-icon.html  
 http://www.totoro.org/jen/  
 
 ## JavaScript - Node.js - NW.js
+
 https://github.com/nwjs/nw.js/wiki/Changes-related-to-node  
 
 https://stackoverflow.com/questions/14989081/node-js-to-get-determine-os-version  
