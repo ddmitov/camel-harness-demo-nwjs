@@ -1,7 +1,5 @@
 # camel-harness-demo-nwjs
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/692a20086cc44076a6770af0309e2c49)](https://www.codacy.com/app/ddmitov/camel-harness-demo-nwjs?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ddmitov/camel-harness-demo-nwjs&amp;utm_campaign=Badge_Grade)  
-
 Demo application for the [camel-harness](https://www.npmjs.com/package/camel-harness) npm package based on [NW.js](http://nwjs.io/)
 
 ## Quick Start
